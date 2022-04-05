@@ -1,0 +1,31 @@
+Train on 3802 samples, validate on 1630 samples
+Epoch 1/10
+3802/3802 [==============================] - 198s 52ms/step - loss: 3.7870 - acc: 0.2872 - val_loss: 1.4734 - val_acc: 0.4853
+Epoch 2/10
+3802/3802 [==============================] - 198s 52ms/step - loss: 1.3085 - acc: 0.5508 - val_loss: 1.3229 - val_acc: 0.5331
+Epoch 3/10
+3802/3802 [==============================] - 199s 52ms/step - loss: 0.9863 - acc: 0.6733 - val_loss: 1.1678 - val_acc: 0.5926
+Epoch 4/10
+3802/3802 [==============================] - 198s 52ms/step - loss: 0.7381 - acc: 0.7470 - val_loss: 0.8586 - val_acc: 0.7325
+Epoch 5/10
+3802/3802 [==============================] - 199s 52ms/step - loss: 0.5560 - acc: 0.8196 - val_loss: 0.8483 - val_acc: 0.7190
+Epoch 6/10
+3802/3802 [==============================] - 199s 52ms/step - loss: 0.4320 - acc: 0.8627 - val_loss: 0.7669 - val_acc: 0.7540
+Epoch 7/10
+3802/3802 [==============================] - 198s 52ms/step - loss: 0.3330 - acc: 0.8945 - val_loss: 0.9006 - val_acc: 0.7313
+Epoch 8/10
+3802/3802 [==============================] - 202s 53ms/step - loss: 0.2612 - acc: 0.9145 - val_loss: 0.7826 - val_acc: 0.7822
+Epoch 9/10
+3802/3802 [==============================] - 200s 53ms/step - loss: 0.1939 - acc: 0.9406 - val_loss: 0.9400 - val_acc: 0.7331
+Epoch 10/10
+3802/3802 [==============================] - 202s 53ms/step - loss: 0.1591 - acc: 0.9532 - val_loss: 0.9633 - val_acc: 0.7429
+
+"score = model.evaluate(x_test, y_test, verbose = 0)\nprint('Test loss :', score[0])\nprint('Test accuracy : ', score[1])"
+
+?
+
+with open('submission.csv', 'a') as submission:
+
+    for image_name in test.ID:
+
+        if image_name != 55 and image_name != 1201 and image_name 
